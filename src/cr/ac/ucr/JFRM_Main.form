@@ -47,7 +47,7 @@
                               <Component id="SpecificPosition_btn" alignment="0" pref="210" max="32767" attributes="0"/>
                               <Component id="ModifyPerson_btn" alignment="0" max="32767" attributes="0"/>
                               <Component id="AddPerson_btn" max="32767" attributes="0"/>
-                              <Component id="ModifyPerson_btn1" alignment="0" max="32767" attributes="0"/>
+                              <Component id="SavedStudents_btn" alignment="0" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -96,7 +96,7 @@
                   </Group>
                   <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="ModifyPerson_btn1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="SavedStudents_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="Exit_btn" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
@@ -140,6 +140,9 @@
               <Color id="Hand Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SearchPerson_btnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="ModifyPerson_btn">
           <Properties>
@@ -148,6 +151,9 @@
               <Color id="Hand Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ModifyPerson_btnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="DeletePerson_btn">
           <Properties>
@@ -156,14 +162,20 @@
               <Color id="Hand Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DeletePerson_btnActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="ModifyPerson_btn1">
+        <Component class="javax.swing.JButton" name="SavedStudents_btn">
           <Properties>
             <Property name="text" type="java.lang.String" value="Show Saved Students"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SavedStudents_btnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="Exit_btn">
           <Properties>
@@ -186,6 +198,9 @@
               <Color id="Hand Cursor"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SpecificPosition_btnActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="AvailablePositions_btn">
           <Properties>
