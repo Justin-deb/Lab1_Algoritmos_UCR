@@ -30,6 +30,6 @@ public class Person {
     
     @Override
     public String toString(){
-        return "Name: " + this.name + "\n Age: " + this.age;
+        return "Name: " + this.name + "\nAge: " + this.age;
     }
 }
